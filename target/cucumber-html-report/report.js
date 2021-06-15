@@ -1,0 +1,117 @@
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/features/search.feature");
+formatter.feature({
+  "name": "Search for Vegetables",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Login and search for vegetables",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@SeleniumTest"
+    }
+  ]
+});
+formatter.step({
+  "name": "user is on GreenKart landing page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepDefinitionSearch.user_is_on_greenkart_landing_page()"
+});
+formatter.result({
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83\nBuild info: version: \u00273.8.1\u0027, revision: \u00276e95a6684b\u0027, time: \u00272017-12-01T18:33:54.468Z\u0027\nSystem info: host: \u0027LAPTOP-D4R1H8SQ\u0027, ip: \u0027192.168.0.223\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00D49563+2725219]\n\tOrdinal0 [0x00C48551+1672529]\n\tOrdinal0 [0x00B30359+525145]\n\tOrdinal0 [0x00AC0B77+68471]\n\tOrdinal0 [0x00ABD32C+54060]\n\tOrdinal0 [0x00ADCC37+183351]\n\tOrdinal0 [0x00ADCA3D+182845]\n\tOrdinal0 [0x00ADA94B+174411]\n\tOrdinal0 [0x00AC2528+75048]\n\tOrdinal0 [0x00AC35A0+79264]\n\tOrdinal0 [0x00AC3539+79161]\n\tOrdinal0 [0x00C5D607+1758727]\n\tGetHandleVerifier [0x00E66546+1050150]\n\tGetHandleVerifier [0x00E66291+1049457]\n\tGetHandleVerifier [0x00E710D7+1094071]\n\tGetHandleVerifier [0x00E66B46+1051686]\n\tOrdinal0 [0x00C55B06+1727238]\n\tOrdinal0 [0x00C5EB7B+1764219]\n\tOrdinal0 [0x00C5ECE3+1764579]\n\tOrdinal0 [0x00C74C05+1854469]\n\tBaseThreadInitThunk [0x7721FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77707A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77707A4E+238]\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:142)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat Cucumber.Automation1.Base.getdriver(Base.java:20)\r\n\tat stepDefinitions.stepDefinitionSearch.user_is_on_greenkart_landing_page(stepDefinitionSearch.java:25)\r\n\tat ✽.user is on GreenKart landing page(src/test/java/features/search.feature:5)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "user search for \"Cucumber\" vegetable",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepDefinitionSearch.user_search_for_something_vegetable(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "\"Cucumber\" result is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepDefinitionSearch.something_result_is_displayed(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.hooks.afterValidating(hooks.java:26)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:32)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:26)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)\r\n\tat cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
+  "status": "failed"
+});
+formatter.scenario({
+  "name": "Login and search for vegetables",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@SeleniumTest"
+    }
+  ]
+});
+formatter.step({
+  "name": "user is on GreenKart landing page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepDefinitionSearch.user_is_on_greenkart_landing_page()"
+});
+formatter.result({
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83\nBuild info: version: \u00273.8.1\u0027, revision: \u00276e95a6684b\u0027, time: \u00272017-12-01T18:33:54.468Z\u0027\nSystem info: host: \u0027LAPTOP-D4R1H8SQ\u0027, ip: \u0027192.168.0.223\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00D49563+2725219]\n\tOrdinal0 [0x00C48551+1672529]\n\tOrdinal0 [0x00B30359+525145]\n\tOrdinal0 [0x00AC0B77+68471]\n\tOrdinal0 [0x00ABD32C+54060]\n\tOrdinal0 [0x00ADCC37+183351]\n\tOrdinal0 [0x00ADCA3D+182845]\n\tOrdinal0 [0x00ADA94B+174411]\n\tOrdinal0 [0x00AC2528+75048]\n\tOrdinal0 [0x00AC35A0+79264]\n\tOrdinal0 [0x00AC3539+79161]\n\tOrdinal0 [0x00C5D607+1758727]\n\tGetHandleVerifier [0x00E66546+1050150]\n\tGetHandleVerifier [0x00E66291+1049457]\n\tGetHandleVerifier [0x00E710D7+1094071]\n\tGetHandleVerifier [0x00E66B46+1051686]\n\tOrdinal0 [0x00C55B06+1727238]\n\tOrdinal0 [0x00C5EB7B+1764219]\n\tOrdinal0 [0x00C5ECE3+1764579]\n\tOrdinal0 [0x00C74C05+1854469]\n\tBaseThreadInitThunk [0x7721FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77707A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77707A4E+238]\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:142)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat Cucumber.Automation1.Base.getdriver(Base.java:20)\r\n\tat stepDefinitions.stepDefinitionSearch.user_is_on_greenkart_landing_page(stepDefinitionSearch.java:25)\r\n\tat ✽.user is on GreenKart landing page(src/test/java/features/search.feature:12)\r\n",
+  "status": "failed"
+});
+formatter.step({
+  "name": "user search for \"Brinjal\" vegetable",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepDefinitionSearch.user_search_for_something_vegetable(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "Added more of the same item to cart",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepDefinitionSearch.added_more_of_the_same_item_to_cart()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "proceeds to checkout",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepDefinitionSearch.proceeds_to_checkout()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "verify if \"Brinjal\" result is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepDefinitionSearch.verify_if_something_result_is_displayed(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.hooks.afterValidating(hooks.java:26)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:32)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:26)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)\r\n\tat cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)\r\n\tat cucumber.api.TestStep.run(TestStep.java:83)\r\n\tat cucumber.api.TestCase.run(TestCase.java:58)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:80)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
+  "status": "failed"
+});
+});

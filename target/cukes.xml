@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="13.685388">
+<testcase classname="Search for Vegetables" name="Login and search for vegetables" time="11.310796">
+<failure message="org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83&#10;Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'&#10;System info: host: 'LAPTOP-D4R1H8SQ', ip: '192.168.0.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x00D49563+2725219]&#10;&#9;Ordinal0 [0x00C48551+1672529]&#10;&#9;Ordinal0 [0x00B30359+525145]&#10;&#9;Ordinal0 [0x00AC0B77+68471]&#10;&#9;Ordinal0 [0x00ABD32C+54060]&#10;&#9;Ordinal0 [0x00ADCC37+183351]&#10;&#9;Ordinal0 [0x00ADCA3D+182845]&#10;&#9;Ordinal0 [0x00ADA94B+174411]&#10;&#9;Ordinal0 [0x00AC2528+75048]&#10;&#9;Ordinal0 [0x00AC35A0+79264]&#10;&#9;Ordinal0 [0x00AC3539+79161]&#10;&#9;Ordinal0 [0x00C5D607+1758727]&#10;&#9;GetHandleVerifier [0x00E66546+1050150]&#10;&#9;GetHandleVerifier [0x00E66291+1049457]&#10;&#9;GetHandleVerifier [0x00E710D7+1094071]&#10;&#9;GetHandleVerifier [0x00E66B46+1051686]&#10;&#9;Ordinal0 [0x00C55B06+1727238]&#10;&#9;Ordinal0 [0x00C5EB7B+1764219]&#10;&#9;Ordinal0 [0x00C5ECE3+1764579]&#10;&#9;Ordinal0 [0x00C74C05+1854469]&#10;&#9;BaseThreadInitThunk [0x7721FA29+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77707A7E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77707A4E+238]&#10;&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)&#13;&#10;&#9;at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;&#10;&#9;at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)&#13;&#10;&#9;at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;&#10;&#9;at Cucumber.Automation1.Base.getdriver(Base.java:20)&#13;&#10;&#9;at stepDefinitions.stepDefinitionSearch.user_is_on_greenkart_landing_page(stepDefinitionSearch.java:25)&#13;&#10;&#9;at ✽.user is on GreenKart landing page(src/test/java/features/search.feature:5)&#13;&#10;"><![CDATA[Given user is on GreenKart landing page.....................................failed
+When user search for "Cucumber" vegetable...................................skipped
+Then "Cucumber" result is displayed.........................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'LAPTOP-D4R1H8SQ', ip: '192.168.0.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00D49563+2725219]
+	Ordinal0 [0x00C48551+1672529]
+	Ordinal0 [0x00B30359+525145]
+	Ordinal0 [0x00AC0B77+68471]
+	Ordinal0 [0x00ABD32C+54060]
+	Ordinal0 [0x00ADCC37+183351]
+	Ordinal0 [0x00ADCA3D+182845]
+	Ordinal0 [0x00ADA94B+174411]
+	Ordinal0 [0x00AC2528+75048]
+	Ordinal0 [0x00AC35A0+79264]
+	Ordinal0 [0x00AC3539+79161]
+	Ordinal0 [0x00C5D607+1758727]
+	GetHandleVerifier [0x00E66546+1050150]
+	GetHandleVerifier [0x00E66291+1049457]
+	GetHandleVerifier [0x00E710D7+1094071]
+	GetHandleVerifier [0x00E66B46+1051686]
+	Ordinal0 [0x00C55B06+1727238]
+	Ordinal0 [0x00C5EB7B+1764219]
+	Ordinal0 [0x00C5ECE3+1764579]
+	Ordinal0 [0x00C74C05+1854469]
+	BaseThreadInitThunk [0x7721FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77707A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77707A4E+238]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at Cucumber.Automation1.Base.getdriver(Base.java:20)
+	at stepDefinitions.stepDefinitionSearch.user_is_on_greenkart_landing_page(stepDefinitionSearch.java:25)
+	at ✽.user is on GreenKart landing page(src/test/java/features/search.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="Search for Vegetables" name="Login and search for vegetables 2" time="2.374592">
+<failure message="org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83&#10;Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'&#10;System info: host: 'LAPTOP-D4R1H8SQ', ip: '192.168.0.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x00D49563+2725219]&#10;&#9;Ordinal0 [0x00C48551+1672529]&#10;&#9;Ordinal0 [0x00B30359+525145]&#10;&#9;Ordinal0 [0x00AC0B77+68471]&#10;&#9;Ordinal0 [0x00ABD32C+54060]&#10;&#9;Ordinal0 [0x00ADCC37+183351]&#10;&#9;Ordinal0 [0x00ADCA3D+182845]&#10;&#9;Ordinal0 [0x00ADA94B+174411]&#10;&#9;Ordinal0 [0x00AC2528+75048]&#10;&#9;Ordinal0 [0x00AC35A0+79264]&#10;&#9;Ordinal0 [0x00AC3539+79161]&#10;&#9;Ordinal0 [0x00C5D607+1758727]&#10;&#9;GetHandleVerifier [0x00E66546+1050150]&#10;&#9;GetHandleVerifier [0x00E66291+1049457]&#10;&#9;GetHandleVerifier [0x00E710D7+1094071]&#10;&#9;GetHandleVerifier [0x00E66B46+1051686]&#10;&#9;Ordinal0 [0x00C55B06+1727238]&#10;&#9;Ordinal0 [0x00C5EB7B+1764219]&#10;&#9;Ordinal0 [0x00C5ECE3+1764579]&#10;&#9;Ordinal0 [0x00C74C05+1854469]&#10;&#9;BaseThreadInitThunk [0x7721FA29+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77707A7E+286]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77707A4E+238]&#10;&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)&#13;&#10;&#9;at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)&#13;&#10;&#9;at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;&#10;&#9;at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)&#13;&#10;&#9;at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;&#10;&#9;at Cucumber.Automation1.Base.getdriver(Base.java:20)&#13;&#10;&#9;at stepDefinitions.stepDefinitionSearch.user_is_on_greenkart_landing_page(stepDefinitionSearch.java:25)&#13;&#10;&#9;at ✽.user is on GreenKart landing page(src/test/java/features/search.feature:12)&#13;&#10;"><![CDATA[Given user is on GreenKart landing page.....................................failed
+When user search for "Brinjal" vegetable....................................skipped
+And Added more of the same item to cart.....................................skipped
+And proceeds to checkout....................................................skipped
+Then verify if "Brinjal" result is displayed................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'LAPTOP-D4R1H8SQ', ip: '192.168.0.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00D49563+2725219]
+	Ordinal0 [0x00C48551+1672529]
+	Ordinal0 [0x00B30359+525145]
+	Ordinal0 [0x00AC0B77+68471]
+	Ordinal0 [0x00ABD32C+54060]
+	Ordinal0 [0x00ADCC37+183351]
+	Ordinal0 [0x00ADCA3D+182845]
+	Ordinal0 [0x00ADA94B+174411]
+	Ordinal0 [0x00AC2528+75048]
+	Ordinal0 [0x00AC35A0+79264]
+	Ordinal0 [0x00AC3539+79161]
+	Ordinal0 [0x00C5D607+1758727]
+	GetHandleVerifier [0x00E66546+1050150]
+	GetHandleVerifier [0x00E66291+1049457]
+	GetHandleVerifier [0x00E710D7+1094071]
+	GetHandleVerifier [0x00E66B46+1051686]
+	Ordinal0 [0x00C55B06+1727238]
+	Ordinal0 [0x00C5EB7B+1764219]
+	Ordinal0 [0x00C5ECE3+1764579]
+	Ordinal0 [0x00C74C05+1854469]
+	BaseThreadInitThunk [0x7721FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77707A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77707A4E+238]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at Cucumber.Automation1.Base.getdriver(Base.java:20)
+	at stepDefinitions.stepDefinitionSearch.user_is_on_greenkart_landing_page(stepDefinitionSearch.java:25)
+	at ✽.user is on GreenKart landing page(src/test/java/features/search.feature:12)
+]]></failure>
+</testcase>
+</testsuite>
